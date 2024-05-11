@@ -131,7 +131,7 @@ header {
 }
 
 .banner-text p{
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 500;
     margin-bottom: 50px;
 }
@@ -153,6 +153,44 @@ header {
     border: 1px solid black;
 }
 
+.arrow{
+    display: none;
+}
+
+footer{
+    margin-top: 30px;
+    box-shadow: inset rgba(128, 128, 128, 0.726) 0 1px 3px;
+}
+
+.footer-opt {
+    padding: 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.521);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-opt div{
+    margin: 0 15px;
+    width: 15vw;
+}
+
+.footer-head{
+    padding: 20px 0;
+}
+
+.footer-head h3{
+    color: rgba(0 ,0 ,0, 0.8);
+}
+
+.footer-list{
+    padding: 5px 0;
+}
+
+.footer-list li{
+    padding: 15px 0;
+    color: rgba(0, 0, 0, 0.596);
+    font-weight: 500;
+}
 
 @media only screen and (max-width:768px) {
     .logo {
@@ -231,6 +269,40 @@ header {
         padding: 30px 0;
     }
 
+    .footer-opt{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .footer-opt div{
+        width: 100%;
+        margin: 0;
+        padding: 10px 15px;
+    }
+
+    .footer-head{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-head h3{
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .footer-list{
+        display: none;
+    }
+    
+    .arrow{
+        display: block;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    .footer-list li{
+        padding: 13px 0;
+    }
 }
 
 
