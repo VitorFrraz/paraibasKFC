@@ -192,6 +192,48 @@ footer{
     font-weight: 500;
 }
 
+.footer-opt2 {
+    padding: 40px 50px;
+}
+ 
+.footer-opt2 .social{
+    margin-left: -5px;
+}
+
+.footer-opt2 .social .icon{
+    width: 40px;
+    padding: 5px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.footer-opt2 .social .icon:hover {
+    background-color: rgba(128, 128, 128, 0.281);
+}
+
+.footer-opt2 .copy-desc a {
+    color: #000;
+    display: inline-block;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-opt2 .copy-desc a:hover{
+    text-decoration: underline;
+}
+
+.footer-opt2 .copy-desc a:not(:first-child){
+    padding-left: 30px;
+    border-left: 2px solid rgba(0, 0, 0, 0.534);
+}
+
+.footer-opt2 .copyright{
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.466);
+}
+
 @media only screen and (max-width:768px) {
     .logo {
         width: 100%;
@@ -303,6 +345,25 @@ footer{
     .footer-list li{
         padding: 13px 0;
     }
+
+    .footer-opt2{
+        padding: 40px 30px;
+    }
+
+    .footer-opt2 .copy-desc a{
+        display: block;
+        padding-right: 0;
+    }
+
+    .footer-opt2 .copy-desc a:not(:first-child){
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .footer-opt2 .copyright{
+        margin-top: 30px;
+    }
+
 }
 
 
