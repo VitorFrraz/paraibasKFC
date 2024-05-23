@@ -37,6 +37,22 @@ e.addEventListener('click', () => {
         footerlist.style.display = 'block';
         e.style.transform = 'rotate(180deg)';
     }
- });
+
+
+});
     
+})
+
+
+
+const menuNav = document.querySelector('.menu-nav')
+
+window.addEventListener('scroll', ()=> {
+
+    if(window.pageXOffset > menuNav.offsetTop){
+        menuNav.classList.add('sticky');
+    }
+    else{
+        menuNav.classList.remove('sticky');
+    }
 })
